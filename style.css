@@ -340,3 +340,99 @@ body {
     padding: 30px 20px;
     margin-top: 40px;
 }
+
+/* --- Responsive Styles --- */
+
+/* Tablet and smaller devices */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+        margin: 0 15px 15px 15px;
+    }
+
+    .hero {
+        padding: 40px;
+        margin: 20px 30px;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .features, .how, .cta {
+        padding: 60px 30px;
+        margin: 20px 30px;
+    }
+
+    .who {
+        padding: 60px 30px;
+        margin: 0 30px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        position: static; /* Remove sticky for simpler mobile layout */
+    }
+
+    .navbar a {
+        margin-left: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        margin: 20px 15px;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        animation: none; /* Disable float animation on mobile */
+        max-width: 80%;
+        margin-top: 30px;
+    }
+
+    .features, .how, .cta, .who {
+        padding: 50px 20px;
+        margin: 20px 15px;
+    }
+
+    .who {
+        margin: 0 15px;
+    }
+
+    .features h2, .who h2, .how h2 {
+        font-size: 32px;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+    }
+
+    .btn-primary, .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+}
